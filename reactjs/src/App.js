@@ -1,13 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Playground from "./Playground";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/">
-          <div className="App">
+      <div className="App">
+        <Switch>
+          <Route path="/playground">
+            <Playground />
+          </Route>
+          <Route path="/">
             <header className="App-header">
               <img src={logo} className="App-logo" alt="logo" />
               <p>Welcome to our playing ground!</p>
@@ -19,9 +23,9 @@ function App() {
                 Let's Rage!
               </a>
             </header>
-          </div>
-        </Route>
-      </Switch>
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
