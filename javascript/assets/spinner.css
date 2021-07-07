@@ -1,0 +1,138 @@
+#oracle-container {
+	position:relative;
+	width: 100%;
+	clear: both;
+    background-color: #fce7eb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }   
+
+#button {
+	position:relative;
+    width: 100px;
+    background-color:#ec13cd;	
+    z-index:5;
+	margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;	
+	text-align:center;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight:bold;	
+    font: 24px Lucida Console, Arial,Helvetica, sans-serif;
+    cursor: pointer;
+
+}
+
+.globe_container {
+	position: relative;
+    width: 1400px;
+    margin:10px auto;
+}
+
+#globe_background{
+	background:url(../images/globe_background.png);
+	width:900px;
+	height:660x;
+	z-index:1;
+	position:relative;
+	top: 10;
+    left:50;
+}
+#globe_hands{
+	background:url(../images/globe_hands.png);
+	width:338px;
+	height:659px;
+	z-index:2;
+	top: 44px;
+    margin-left: auto;
+	margin-right: auto;
+	position:relative;
+}
+#globe_small {
+    height:167px;
+    width:165px;
+	position:absolute;
+	margin-left: auto;
+	margin-right: auto;
+    top: 30px;
+	z-index:4;
+}
+#globe_large {
+    height:276px;
+    width:276px;
+	position:absolute;
+	top:25px;
+	left:50px;
+	z-index:3;
+    background-color: transparent;
+}
+#oracle-answer {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    font: 24px Lucida Console, Helvetica,sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    word-spacing: 3px;
+    line-height: 2;
+}
+#oracle-question {
+    padding: 20px;
+    max-width: 100%;
+}
+#oracle-wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+}
+.page-template-page-oracle-php #content {
+    position: relative;
+}
+
+@media screen and (max-width: 550px) {
+
+	.globe_container {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	#globe_background {
+		width: 100%;
+		height: 250px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#globe_hands {	    
+	    width: 59%;
+	    height: 129px;
+	    z-index: 3;
+	    top: 165px;
+	    left: 20%;
+	    position: absolute;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	}
+
+	#globe_large {
+	    height: 169px;
+    	width: 169px;
+	    position: absolute;
+	    top: 53px;
+	    left: 64px;
+	    z-index: 2;
+	    background-color: transparent;
+	}
+
+	#globe_small {
+	    height: 90px;
+	    width: 90px;
+	    position: absolute;
+	    left: 104px;
+	    top: 114px;
+	    z-index: 4;
+	}
+}
