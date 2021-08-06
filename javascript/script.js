@@ -111,11 +111,6 @@
 // beads.pop();
 // console.log(beads);
 
-
-
-
-
-
 // // SORTING ASCENDING BUBBLE METHOD
 // var arr = [21, 11, 30, 3, 4, 56, 23, 12, 45];
 // // console.log(`Initial array = ${arr.join(" - ")}`);
@@ -138,7 +133,6 @@
 //     console.log(`Sorting #${i + 1} = ${arr.join(" - ")}`);
 //     }
 // }
-
 
 // // var array = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -187,7 +181,6 @@
 //     console.log(`Sorting #${i + 1} = ${arr.join(" - ")}`)
 //     }
 // }
-
 
 // // foo bar baz
 // var input = prompt();
@@ -241,18 +234,47 @@
 //     }
 // }
 
-// search
-var data = [1, 2, 4, 5, 64, 22];
-var search = 5;
+// // search
+// var data = [1, 2, 4, 5, 64, 22];
+// var search = 64;
 
-var searching = function() {
-    for (var i = 0; i < data.length; i++) {
-        if (data[i] === search) {
-            console.log(`Data ditemukan pada index #${i}`);
-            break;
-        } else {
-            empty = i;
-        }
-    console.log(`Index #${empty} data tidak ditemukan`);
-    }
+// var searching = function() {
+//     for (var i = 0; i < data.length; i++) {
+//         if (data[i] === search) {
+//             console.log(`Data ditemukan pada index #${i}`);
+//             break;
+//         } else {
+//             empty = i;
+//         }
+//     console.log(`Index #${empty} data tidak ditemukan`);
+//     }
+// }
+
+// console.log(searching());
+
+function add(n) {
+  return 5 + n + 5;
 }
+
+let substract = (n) => 100 - 50 - n;
+
+console.log(add(5));
+
+console.log(add(1));
+
+substract(19);
+
+add(4);
+
+console.log(add(10));
+
+console.log(substract(12));
+
+console.log(substract(5));
+
+console.log(substract(-10));
+
+document.addEventListener("click", (e) => {
+    e.target;
+    console.log(e.target);
+});
