@@ -39,7 +39,7 @@
 //   return "unknown value";
 // }
 
-//hoisting, scope, execution phase
+// hoisting, scope, execution phase
 
 // function introduceYourSelf() {
 //   return `Hi, my name is ${name}, a regular ${age} years old ${gender}. I am a proud ${religion}.`;
@@ -252,29 +252,75 @@
 
 // console.log(searching());
 
-function add(n) {
-  return 5 + n + 5;
-}
+// function add(n) {
+//   return 5 + n + 5;
+// }
 
-let substract = (n) => 100 - 50 - n;
+// let substract = (n) => 100 - 50 - n;
 
-console.log(add(5));
+// console.log(add(5));
 
-console.log(add(1));
+// console.log(add(1));
 
-substract(19);
+// substract(19);
 
-add(4);
+// add(4);
 
-console.log(add(10));
+// console.log(add(10));
 
-console.log(substract(12));
+// console.log(substract(12));
 
-console.log(substract(5));
+// console.log(substract(5));
 
-console.log(substract(-10));
+// console.log(substract(-10));
 
-document.addEventListener("click", (e) => {
-    e.target;
-    console.log(e.target);
+// document.addEventListener("click", (e) => {
+//     e.target;
+//     console.log(e.target);
+// });
+
+
+
+
+
+// const genap = [10, 4, 6, 8, 10];
+// const copyGenap = [...genap];
+// genap[0] = 7;
+
+// console.log(genap);
+// console.log(copyGenap);
+
+// const ganjil = [1, 3, 5, 7, 9];
+
+// genap[0] = 5;
+// const genapGanjil = [...ganjil, ...genap];
+
+
+// console.log(genapGanjil)
+// console.log(copyGenap);
+
+// fetch
+const searchButton = document.querySelector(".search-button");
+
+searchButton.addEventListener("click", function() {
+
+    const inputKeyword = document.querySelector(".input-keyword");
+
+    fetch('https://...' + inputKeyword.value)
+        .then(res => res.json())
+        .then(res => {
+
+            const movies = res.promisenyaApa;
+
+            let cards = "";
+            movies.forEach((m) => {
+                cards += moviesContainerDiHtmlnya(m);
+            });
+
+            // select movies container
+            const moviesContainerDiHtmlnya = document.querySelector(".movies-container");
+            moviesContainerDiHtmlnya.innerHTML = cards;
+
+        })
+
 });

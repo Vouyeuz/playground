@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,14 +13,15 @@ body {
 .text__container {
     background: hsl(270, 100%, 50%);
     
+    /* flex justify content and align items center somehow not working */
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     border: 3px solid black;
-    height: 180px;
-    width: 180px;
+    height: 80px;
+    width: 80px;
     
     margin: auto;
 
