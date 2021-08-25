@@ -299,28 +299,74 @@
 // console.log(genapGanjil)
 // console.log(copyGenap);
 
-// fetch
-const searchButton = document.querySelector(".search-button");
+// // fetch
+// const searchButton = document.querySelector(".search-button");
 
-searchButton.addEventListener("click", function() {
+// searchButton.addEventListener("click", function() {
 
-    const inputKeyword = document.querySelector(".input-keyword");
+//     const inputKeyword = document.querySelector(".input-keyword");
 
-    fetch('https://...' + inputKeyword.value)
-        .then(res => res.json())
-        .then(res => {
+//     fetch('https://...' + inputKeyword.value)
+//         .then(res => res.json())
+//         .then(res => {
 
-            const movies = res.promisenyaApa;
+//             const movies = res.promisenyaApa;
 
-            let cards = "";
-            movies.forEach((m) => {
-                cards += moviesContainerDiHtmlnya(m);
-            });
+//             let cards = "";
+//             movies.forEach((m) => {
+//                 cards += moviesContainerDiHtmlnya(m);
+//             });
 
-            // select movies container
-            const moviesContainerDiHtmlnya = document.querySelector(".movies-container");
-            moviesContainerDiHtmlnya.innerHTML = cards;
+//             // select movies container
+//             const moviesContainerDiHtmlnya = document.querySelector(".movies-container");
+//             moviesContainerDiHtmlnya.innerHTML = cards;
 
-        })
+//         })
 
-});
+// });
+
+
+
+
+
+
+// const reverseArrayList = arrayList.map( (arr) => {
+    //     [0]
+    // }); 
+    
+    // console.log(reverseArrayList);
+    //     const arrayList =  ['a', 'b', 'c', 'd', 'e', 'f'];
+    //     console.log(arrayList);
+    
+    // let arr = arrayList[0];
+    // let reverseArrayList = "";
+    
+    // let a = function() {
+        
+        //     for ( i = 0; i < arrayList.length; i++)  {
+            //            reverseArrayList += i++;
+            //     }
+            
+            
+            // };
+            
+            // console.log(arr);
+            // console.log(reverseArrayList);
+            // console.log(a());
+            
+//     let arrayList =  ['a', 'b', 'c', 'd', 'e', 'f'];
+
+//     // for ( let i = arrayList.length - 1; i >= 0; i--) {
+//     //     console.log(arrayList[i]);
+//     // }
+
+// for (let number of arrayList.reverse()) {
+//     console.log(number);
+// }
+
+// CREATE DATABASE pegawai;
+// USE pegawai;
+
+// CREATE TABLE managerial
+
+
