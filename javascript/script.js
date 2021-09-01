@@ -362,3 +362,43 @@
 // for (let i = 0; i < array.length; i++) {
 //     console.log(array[i]);
 // }
+
+
+
+
+
+//! ///////////////// DANS MULTI PRO //////////////////////////
+
+//* PALINDROME
+// const isPalindrome = function(inputKeyword) {
+//    const len = 
+// }
+
+const tryButton = document.querySelector(".submit");
+const inputKeyword = document.querySelector(".input");
+tryButton.addEventListener("click", function() {
+    
+    console.log(inputKeyword.value);
+    // isPalindrome(inputKeyword.value);
+
+});
+
+inputKeyword.addEventListener("keyup", function(e) {
+    if(e.keyCode === 13) {
+
+        console.log(inputKeyword.value);
+        let refresh = "";
+        const container = document.querySelector(".palindrome");
+        container.innerHTML = refresh;
+
+    }
+});
+
+
+
+
+//* REVERSE ARRAY
+
+
+
+//* FIBONACCI
