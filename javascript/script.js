@@ -65,7 +65,7 @@
 // dua("Dirgantara");
 // console.log(nama);
 
-// // KeDa Tech: Programming Test 
+// // KeDa Tech: Programming Test
 // // !Python
 // // for x in range(1,101):
 // //     if x % 15 == 0:
@@ -363,42 +363,92 @@
 //     console.log(array[i]);
 // }
 
-
-
-
-
 //! ///////////////// DANS MULTI PRO //////////////////////////
+//* Prompt
 
-//* PALINDROME
-// const isPalindrome = function(inputKeyword) {
-//    const len = 
-// }
-
+//? onClick
 const tryButton = document.querySelector(".submit");
 const inputKeyword = document.querySelector(".input");
-tryButton.addEventListener("click", function() {
-    
-    console.log(inputKeyword.value);
+tryButton.addEventListener("click", function () {
+  //   console.log(inputKeyword.value);
+  //   isPalindrome(inputKeyword.value);
+    fibonacci(inputKeyword.value);
+});
+
+//? press+enter
+inputKeyword.addEventListener("keyup", function (e) {
+  if (e.keyCode === 13) {
+    // console.log(inputKeyword.value);
     // isPalindrome(inputKeyword.value);
-
+    fibonacci(inputKeyword.value);
+  }
 });
 
-inputKeyword.addEventListener("keyup", function(e) {
-    if(e.keyCode === 13) {
+//* /////////////////////////////////////////////////////////////
 
-        console.log(inputKeyword.value);
-        let refresh = "";
-        const container = document.querySelector(".palindrome");
-        container.innerHTML = refresh;
+//* PALINDROME
+// const array = ""
 
-    }
-});
-
-
-
+const isPalindrome = (str) => {
+  //? using for loop
+  // let palindrome = "";
+  // for (let i = 0; i < str.length; i++) {
+  //   palindrome += str[str.length - i - 1];
+  // }
+  // console.log(palindrome);
+  // if (palindrome !== str) {
+  //   alert(`${str} is not a palindrome!`);
+  // } else {
+  //   alert(`Bingo! ${str} is a palindrome.`);
+  // }
+  //? using for loop and index devide by 2 for efficacy
+  // for (let i = 0; i < str.length / 2; i++) {
+  //   if (str[i] !== str[str.length - i - 1]) {
+  //     return alert(`${str} is not a palindrome!`);
+  //   }
+  // }
+  // alert(`Bingo! ${str} is a palindrome.`);
+  //? using array methods
+  //   const palindrome = str.split("").reverse().join("");
+  //   if(palindrome !== str) {
+  //       alert(`${str} is not a palindrome`);
+  //   } else {
+  //       alert(`Bingo! ${str} is a palindrome`);
+  //   }
+};
 
 //* REVERSE ARRAY
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+// const str = ["satu", "dua", "tiga"];
+// console.log(arr);
 
+function reverseArray() {
+  //? using array method
+  // return arr.reverse();
+  //? using for loop temp container and index devide by 2, else it will repeat previous sequence when reach mid index
+  //   for (let i = 0; i < arr.length / 2; i++) {
+  //     let temp = arr[i];
+  //     arr[i] = arr[arr.length - i - 1];
+  //     arr[arr.length - i - 1] = temp;
+  // console.log(arr)
+  // }
+  //   return arr;
+}
 
+// console.log(reverseArray(arr));
+// console.log(arr);
 
 //* FIBONACCI
+function fibonacci(num) {
+//   //? using for loop
+//   let arr = [0, 1];
+//   let a, b;
+//   for (let i = 2; i < num; i++) {
+//     a = arr[i - 2];
+//     b = arr[i - 1];
+//     arr.push(a + b);
+//   }
+//   return arr;
+}
+
+// console.log(fibonacci(10));
