@@ -367,18 +367,22 @@
 //* Prompt
 
 //? onClick
+// DOM selection try button from html
 const tryButton = document.querySelector(".submit");
+// DOM selection input box from html
 const inputKeyword = document.querySelector(".input");
+// add event listener when try button clicked
 tryButton.addEventListener("click", function () {
-  //   console.log(inputKeyword.value);
-  //   isPalindrome(inputKeyword.value);
+      console.log(inputKeyword.value);
+    //   isPalindrome(inputKeyword.value);
     fibonacci(inputKeyword.value);
 });
 
 //? press+enter
+// add event listener when enter key pressed
 inputKeyword.addEventListener("keyup", function (e) {
   if (e.keyCode === 13) {
-    // console.log(inputKeyword.value);
+    console.log(inputKeyword.value);
     // isPalindrome(inputKeyword.value);
     fibonacci(inputKeyword.value);
   }
@@ -387,29 +391,35 @@ inputKeyword.addEventListener("keyup", function (e) {
 //* /////////////////////////////////////////////////////////////
 
 //* PALINDROME
-// const array = ""
-
 const isPalindrome = (str) => {
-  //? using for loop
+  //? using for loop to compare full elements
+    // //declare container variable
   // let palindrome = "";
+    // //fill the container using reverse looping start from last index
   // for (let i = 0; i < str.length; i++) {
   //   palindrome += str[str.length - i - 1];
   // }
   // console.log(palindrome);
+    // //compare between reverse container vs input
   // if (palindrome !== str) {
   //   alert(`${str} is not a palindrome!`);
   // } else {
   //   alert(`Bingo! ${str} is a palindrome.`);
   // }
-  //? using for loop and index devide by 2 for efficacy
+  //? using for loop and index devide by 2 for efficacy, comparing  each element per index one by one
+    // //str.length need to be devide by 2 bcz perfect-switch done when mid index reached, pass that point it will become meaningless bcz comparation already done and juzt consume computing time
   // for (let i = 0; i < str.length / 2; i++) {
+        // //comparing elements at first and last index and keep moving toward the center if not stopped
   //   if (str[i] !== str[str.length - i - 1]) {
+        // //not sure why return has same effect with break or false
   //     return alert(`${str} is not a palindrome!`);
   //   }
   // }
   // alert(`Bingo! ${str} is a palindrome.`);
   //? using array methods
+        // //split method needs parameter for deviding point, if left with empty string means will be devide by every single elements. Join method is quite similar
   //   const palindrome = str.split("").reverse().join("");
+        // //compare between reverse version vs original one
   //   if(palindrome !== str) {
   //       alert(`${str} is not a palindrome`);
   //   } else {
@@ -425,13 +435,19 @@ const isPalindrome = (str) => {
 function reverseArray() {
   //? using array method
   // return arr.reverse();
-  //? using for loop temp container and index devide by 2, else it will repeat previous sequence when reach mid index
+
+  //? using for loop temp container
+        // //index length need to be devide by 2, else it will repeat previous sequence when reach mid index
   //   for (let i = 0; i < arr.length / 2; i++) {
+        // //initiate temp container and fill it with first index's element
   //     let temp = arr[i];
+        // //empty first index filled with last index's element
   //     arr[i] = arr[arr.length - i - 1];
+        // //current empty last index filled with element from initial first index that is keep temporarily in temp container/array
   //     arr[arr.length - i - 1] = temp;
   // console.log(arr)
   // }
+        // //return array after switching process
   //   return arr;
 }
 
@@ -441,14 +457,17 @@ function reverseArray() {
 //* FIBONACCI
 function fibonacci(num) {
 //   //? using for loop
-//   let arr = [0, 1];
-//   let a, b;
-//   for (let i = 2; i < num; i++) {
-//     a = arr[i - 2];
-//     b = arr[i - 1];
-//     arr.push(a + b);
-//   }
-//   return arr;
+    //initiate first two elements for starting point
+  let arr = [0, 1];
+    // i start from third index bcz first two index already initiated, else total length will be excess by 2 index from input parameter
+  for (let i = 2; i < num; i++) {
+    // select first index
+    let a = arr[i - 2];
+    // select second index
+    let b = arr[i - 1];
+    arr.push(a + b);
+  }
+  return arr;
 }
 
-// console.log(fibonacci(10));
+console.log(fibonacci(10));
