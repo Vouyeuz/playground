@@ -35,6 +35,7 @@ const isPalindrome = (str) => {
   //   if (palindrome !== str) {
   //     return alert(`${str} is not a palindrome`);
   //   } else {
+  //     return alert(`Bingo! ${str} is a palindrome`);
   //   }
 
   // * using first vs last elements comparison
@@ -67,14 +68,13 @@ function reverseArray(arr) {
 
 // ! fibonacci
 const calculateFibonacci = (num) => {
-//   const arr = [0, 1];
-
-//   for (let i = 2; i < num; i++) {
-//     let a = arr[i - 2];
-//     let b = arr[i - 1];
-//     arr.push(a + b);
-//   }
-//   return arr;
+  //   const arr = [0, 1];
+  //   for (let i = 2; i < num; i++) {
+  //     let a = arr[i - 2];
+  //     let b = arr[i - 1];
+  //     arr.push(a + b);
+  //   }
+  //   return arr;
 };
 
 // console.log(calculateFibonacci(13));
