@@ -1,3 +1,4 @@
+import Hello from './Hello';
 import logo from './logo.svg';
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <Hello dari="Aku" untuk="kamu" siapa="Ayang"/>
       </header>
     </div>
   );
