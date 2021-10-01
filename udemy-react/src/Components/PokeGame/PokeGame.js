@@ -14,7 +14,7 @@ export class PokeGame extends Component {
         return (
             <div>
                 <PokeHand />
-                <PokeHand />
+                {/* <PokeHand /> */}
             </div>
         )
     }
