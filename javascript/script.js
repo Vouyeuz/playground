@@ -373,8 +373,8 @@ const tryButton = document.querySelector(".submit");
 const inputKeyword = document.querySelector(".input");
 // add event listener when try button clicked
 tryButton.addEventListener("click", function () {
-    //   console.log(inputKeyword.value);
-      isPalindrome(inputKeyword.value);
+  //   console.log(inputKeyword.value);
+  isPalindrome(inputKeyword.value);
 });
 
 //? press+enter
@@ -391,40 +391,38 @@ inputKeyword.addEventListener("keyup", function (e) {
 //* PALINDROME
 const isPalindrome = (str) => {
   //? using for loop to compare full elements in case wanna see reverse version
-    // //declare container variable outside for loop, bcz will be refers in if statement, scope matters
+  // //declare container variable outside for loop, bcz will be refers in if statement, scope matters
   // let palindrome = "";
-    // //fill the container using reverse looping start from last index
+  // //fill the container using reverse looping start from last index
   // for (let i = 0; i < str.length; i++) {
   //   palindrome += str[str.length - i - 1];
   // }
   // console.log(palindrome);
-    // //compare between reverse container vs input
+  // //compare between reverse container vs input
   // if (palindrome !== str) {
   //   alert(`${str} is not a palindrome!`);
   // } else {
   //   alert(`Bingo! ${str} is a palindrome.`);
   // }
-
   //? using for loop and index devide by 2 for efficacy, comparing  each element per index one by one
-//     //str.length need to be devide by 2 bcz perfect-switch done when mid index reached, pass that point it will become meaningless bcz comparation already done and juzt consume computing time
-//   for (let i = 0; i < str.length / 2; i++) {
-//         //comparing elements at first and last index and keep moving toward the center if not stopped
-//     if (str[i] !== str[str.length - i - 1]) {
-//         //return needed so next syntax won't be executed if condition true
-//       return alert(`${str} is not a palindrome!`);
-//     }
-//   }
-//   alert(`Bingo! ${str} is a palindrome.`);
-
+  //     //str.length need to be devide by 2 bcz perfect-switch done when mid index reached, pass that point it will become meaningless bcz comparation already done and juzt consume computing time
+  //   for (let i = 0; i < str.length / 2; i++) {
+  //         //comparing elements at first and last index and keep moving toward the center if not stopped
+  //     if (str[i] !== str[str.length - i - 1]) {
+  //         //return needed so next syntax won't be executed if condition true
+  //       return alert(`${str} is not a palindrome!`);
+  //     }
+  //   }
+  //   alert(`Bingo! ${str} is a palindrome.`);
   //? using array methods
-    //     //split method needs parameter for deviding point, if left with empty string means will be devide by every single elements. Join method is quite similar
-    // const palindrome = str.split("").reverse().join("");
-    //     //compare between reverse version vs original one
-    // if(palindrome !== str) {
-    //     alert(`${str} is not a palindrome`);
-    // } else {
-    //     alert(`Bingo! ${str} is a palindrome`);
-    // }
+  //     //split method needs parameter for deviding point, if left with empty string means will be devide by every single elements. Join method is quite similar
+  // const palindrome = str.split("").reverse().join("");
+  //     //compare between reverse version vs original one
+  // if(palindrome !== str) {
+  //     alert(`${str} is not a palindrome`);
+  // } else {
+  //     alert(`Bingo! ${str} is a palindrome`);
+  // }
 };
 
 //* REVERSE ARRAY
@@ -435,19 +433,18 @@ const isPalindrome = (str) => {
 function reverseArray() {
   //? using array method
   // return arr.reverse();
-
   //? using for loop temp container
-        // //index length need to be devide by 2, else it will repeat previous sequence when reach mid index
+  // //index length need to be devide by 2, else it will repeat previous sequence when reach mid index
   //   for (let i = 0; i < arr.length / 2; i++) {
-        // //initiate temp container and fill it with first index's element
+  // //initiate temp container and fill it with first index's element
   //     let temp = arr[i];
-        // //empty first index filled with last index's element
+  // //empty first index filled with last index's element
   //     arr[i] = arr[arr.length - i - 1];
-        // //current empty last index filled with element from initial first index that is keep temporarily in temp container/array
+  // //current empty last index filled with element from initial first index that is keep temporarily in temp container/array
   //     arr[arr.length - i - 1] = temp;
   // console.log(arr)
   // }
-        // //return array after switching process
+  // //return array after switching process
   //   return arr;
 }
 
@@ -456,18 +453,109 @@ function reverseArray() {
 
 //* FIBONACCI
 function fibonacci(num) {
-//   ? using for loop
-//     //initiate first two elements for starting point
-//   let arr = [0, 1];
-//     // i start from third index bcz first two index already initiated, else total length will be excess by 2 index from input parameter
-//   for (let i = 2; i < num; i++) {
-//     // select first index
-//     let a = arr[i - 2];
-//     // select second index
-//     let b = arr[i - 1];
-//     arr.push(a + b);
-//   }
-//   return arr;
+  //   ? using for loop
+  //     //initiate first two elements for starting point
+  //   let arr = [0, 1];
+  //     // i start from third index bcz first two index already initiated, else total length will be excess by 2 index from input parameter
+  //   for (let i = 2; i < num; i++) {
+  //     // select first index
+  //     let a = arr[i - 2];
+  //     // select second index
+  //     let b = arr[i - 1];
+  //     arr.push(a + b);
+  //   }
+  //   return arr;
 }
 
 // console.log(fibonacci(10));
+
+const accountManager = [
+  {
+    id: 1,
+    parentPositionId: "123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    region: "TELE NATIONAL",
+  },
+  {
+    id: 2,
+    parentPositionId: "2123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "CORPORATE",
+    region: "TELE NATIONAL",
+  },
+  {
+    id: 3,
+    parentPositionId: "3123",
+    jobRole: "Account Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    region: "TELE NATIONAL",
+  },
+  {
+    id: 4,
+    parentPositionId: "4123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    region: "HEAD OFFICE",
+  },
+  {
+    id: 5,
+    parentPositionId: "123",
+    jobRole: "Account Manager",
+    segment: "LE WEST",
+    subSegment: "TELE ACCOUNT",
+    region: "TELE NATIONAL",
+  },
+  {
+    id: 6,
+    parentPositionId: "6123",
+    jobRole: "Manager",
+    segment: "LE WEST",
+    subSegment: "CORPORATE",
+    region: "TELE NATIONAL",
+  },
+];
+const advanceSearchParams = {
+  parentPositionId: "",
+  jobRole: "Manager",
+  segment: "LE",
+  subSegment: "",
+  region: "",
+};
+
+const filteredParams = Object.getOwnPropertyDescriptors(advanceSearchParams);
+
+if (!_.isEmpty(
+    advanceSearchParams.parentPositionId ||
+    advanceSearchParams.jobRole ||
+    advanceSearchParams.segment ||
+    advanceSearchParams.subSegment ||
+    advanceSearchParams.region
+)) {
+  const data = accountManager.filter(
+    (item) =>
+      item.jobRole === filteredParams.jobRole.value ||
+      item.parentPositionId === filteredParams.parentPositionId.value ||
+      item.segment === filteredParams.segment.value ||
+      item.region === filteredParams.region.value ||
+      item.subSegment === filteredParams.subSegment.value
+  );
+
+  console.table(data);
+}
+console.table(accountManager);
+console.table(advanceSearchParams);
+console.table(filteredParams);
+console.log(
+  _.isEmpty(
+    advanceSearchParams.parentPositionId ||
+    advanceSearchParams.jobRole ||
+    advanceSearchParams.segment ||
+    advanceSearchParams.subSegment ||
+    advanceSearchParams.region
+  )
+);
