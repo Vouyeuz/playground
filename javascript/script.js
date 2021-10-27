@@ -521,8 +521,8 @@ const accountManager = [
 ];
 const advanceSearchParams = {
   parentPositionId: "",
-  jobRole: "Manager",
-  segment: "LE",
+  jobRole: "",
+  segment: "",
   subSegment: "",
   region: "",
 };
@@ -547,9 +547,22 @@ if (!_.isEmpty(
 
   console.table(data);
 }
-console.table(accountManager);
-console.table(advanceSearchParams);
-console.table(filteredParams);
+if (_.isEmpty(
+    advanceSearchParams.parentPositionId ||
+    advanceSearchParams.jobRole ||
+    advanceSearchParams.segment ||
+    advanceSearchParams.subSegment ||
+    advanceSearchParams.region
+)) {
+  const data = "Hello World!";
+
+  console.table(data);
+}
+
+
+console.table(accountManager); //amList
+console.table(advanceSearchParams); //state from search params
+console.table(filteredParams); //filtered state
 console.log(
   _.isEmpty(
     advanceSearchParams.parentPositionId ||
