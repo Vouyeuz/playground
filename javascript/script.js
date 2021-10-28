@@ -469,14 +469,14 @@ function fibonacci(num) {
 
 // console.log(fibonacci(10));
 
-const accountManager = [
+const allAccountManager = [
   {
     id: 1,
     parentPositionId: "123",
     jobRole: "Manager",
     segment: "LE",
     subSegment: "TELE ACCOUNT",
-    region: "TELE NATIONAL",
+    amRegion: "TELE NATIONAL",
   },
   {
     id: 2,
@@ -484,7 +484,7 @@ const accountManager = [
     jobRole: "Manager",
     segment: "LE",
     subSegment: "CORPORATE",
-    region: "TELE NATIONAL",
+    amRegion: "TELE NATIONAL",
   },
   {
     id: 3,
@@ -492,7 +492,7 @@ const accountManager = [
     jobRole: "Account Manager",
     segment: "LE",
     subSegment: "TELE ACCOUNT",
-    region: "TELE NATIONAL",
+    amRegion: "TELE NATIONAL",
   },
   {
     id: 4,
@@ -500,7 +500,7 @@ const accountManager = [
     jobRole: "Manager",
     segment: "LE",
     subSegment: "TELE ACCOUNT",
-    region: "HEAD OFFICE",
+    amRegion: "HEAD OFFICE",
   },
   {
     id: 5,
@@ -508,7 +508,7 @@ const accountManager = [
     jobRole: "Account Manager",
     segment: "LE WEST",
     subSegment: "TELE ACCOUNT",
-    region: "TELE NATIONAL",
+    amRegion: "TELE NATIONAL",
   },
   {
     id: 6,
@@ -516,15 +516,210 @@ const accountManager = [
     jobRole: "Manager",
     segment: "LE WEST",
     subSegment: "CORPORATE",
-    region: "TELE NATIONAL",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 1,
+    parentPositionId: "123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 2,
+    parentPositionId: "2123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 3,
+    parentPositionId: "3123",
+    jobRole: "Account Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 4,
+    parentPositionId: "4123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "HEAD OFFICE",
+  },
+  {
+    id: 5,
+    parentPositionId: "123",
+    jobRole: "Account Manager",
+    segment: "LE WEST",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 6,
+    parentPositionId: "6123",
+    jobRole: "Manager",
+    segment: "LE WEST",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 1,
+    parentPositionId: "123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 2,
+    parentPositionId: "2123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 3,
+    parentPositionId: "3123",
+    jobRole: "Account Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 4,
+    parentPositionId: "4123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "HEAD OFFICE",
+  },
+  {
+    id: 5,
+    parentPositionId: "123",
+    jobRole: "Account Manager",
+    segment: "LE WEST",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 6,
+    parentPositionId: "6123",
+    jobRole: "Manager",
+    segment: "LE WEST",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 1,
+    parentPositionId: "123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 2,
+    parentPositionId: "2123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 3,
+    parentPositionId: "3123",
+    jobRole: "Account Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 4,
+    parentPositionId: "4123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "HEAD OFFICE",
+  },
+  {
+    id: 5,
+    parentPositionId: "123",
+    jobRole: "Account Manager",
+    segment: "LE WEST",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 6,
+    parentPositionId: "6123",
+    jobRole: "Manager",
+    segment: "LE WEST",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
+  },
+];
+
+const accountManager = [
+  {
+    id: 1,
+    parentPositionId: "123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 2,
+    parentPositionId: "2123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 3,
+    parentPositionId: "3123",
+    jobRole: "Account Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 4,
+    parentPositionId: "4123",
+    jobRole: "Manager",
+    segment: "LE",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "HEAD OFFICE",
+  },
+  {
+    id: 5,
+    parentPositionId: "123",
+    jobRole: "Account Manager",
+    segment: "LE WEST",
+    subSegment: "TELE ACCOUNT",
+    amRegion: "TELE NATIONAL",
+  },
+  {
+    id: 6,
+    parentPositionId: "6123",
+    jobRole: "Manager",
+    segment: "LE WEST",
+    subSegment: "CORPORATE",
+    amRegion: "TELE NATIONAL",
   },
 ];
 const advanceSearchParams = {
   parentPositionId: "",
-  jobRole: "",
+  jobRole: "Manager",
   segment: "",
   subSegment: "",
-  region: "",
+  amRegion: "",
 };
 
 const filteredParams = Object.getOwnPropertyDescriptors(advanceSearchParams);
@@ -534,25 +729,40 @@ if (!_.isEmpty(
     advanceSearchParams.jobRole ||
     advanceSearchParams.segment ||
     advanceSearchParams.subSegment ||
-    advanceSearchParams.region
+    advanceSearchParams.amRegion
 )) {
-  const data = accountManager.filter(
+  const data = allAccountManager.filter(
     (item) =>
-      item.jobRole === filteredParams.jobRole.value ||
-      item.parentPositionId === filteredParams.parentPositionId.value ||
-      item.segment === filteredParams.segment.value ||
-      item.region === filteredParams.region.value ||
-      item.subSegment === filteredParams.subSegment.value
+    item.parentPositionId === filteredParams.parentPositionId.value &&
+    item.jobRole === filteredParams.jobRole.value &&
+    item.segment === filteredParams.segment.value &&
+    item.subSegment === filteredParams.subSegment.value &&
+    item.amRegion === filteredParams.amRegion.value &&
+    item.parentPositionId === filteredParams.parentPositionId.value ||
+    item.jobRole === filteredParams.jobRole.value ||
+    item.segment === filteredParams.segment.value &&
+    item.subSegment === filteredParams.subSegment.value &&
+    item.amRegion === filteredParams.amRegion.value && 
+    item.parentPositionId === filteredParams.parentPositionId.value ||
+    item.jobRole === filteredParams.jobRole.value ||
+    item.segment === filteredParams.segment.value ||
+    item.subSegment === filteredParams.subSegment.value &&
+    item.amRegion === filteredParams.amRegion.value && 
+    item.parentPositionId === filteredParams.parentPositionId.value ||
+    item.jobRole === filteredParams.jobRole.value ||
+    item.segment === filteredParams.segment.value ||
+    item.subSegment === filteredParams.subSegment.value ||
+    item.amRegion === filteredParams.amRegion.value 
   );
-
   console.table(data);
 }
+
 if (_.isEmpty(
     advanceSearchParams.parentPositionId ||
     advanceSearchParams.jobRole ||
     advanceSearchParams.segment ||
     advanceSearchParams.subSegment ||
-    advanceSearchParams.region
+    advanceSearchParams.amRegion
 )) {
   const data = "Hello World!";
 
@@ -560,15 +770,15 @@ if (_.isEmpty(
 }
 
 
+console.log(allAccountManager); //allAmList
 console.table(accountManager); //amList
 console.table(advanceSearchParams); //state from search params
 console.table(filteredParams); //filtered state
-console.log(
-  _.isEmpty(
+console.log(`isEmpty: ${_.isEmpty(
     advanceSearchParams.parentPositionId ||
     advanceSearchParams.jobRole ||
     advanceSearchParams.segment ||
     advanceSearchParams.subSegment ||
-    advanceSearchParams.region
-  )
+    advanceSearchParams.amRegion
+  )}`
 );
