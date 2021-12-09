@@ -65,6 +65,7 @@
 // dua("Dirgantara");
 // console.log(nama);
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // KeDa Tech: Programming Test
 
 // for x in range(1,101):
@@ -114,7 +115,7 @@
 
 
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // // SORTING ASCENDING BUBBLE METHOD
 // var arr = [21, 11, 30, 3, 4, 56, 23, 12, 45];
@@ -242,17 +243,41 @@
 // }
 
 // search
-var data = [1, 2, 4, 5, 64, 22];
-var search = 5;
+// var data = [1, 2, 4, 5, 64, 22];
+// var search = 5;
 
-var searching = function() {
-    for (var i = 0; i < data.length; i++) {
-        if (data[i] === search) {
-            console.log(`Data ditemukan pada index #${i}`);
-            break;
-        } else {
-            empty = i;
+// var searching = function() {
+//     for (var i = 0; i < data.length; i++) {
+//         if (data[i] === search) {
+//             console.log(`Data ditemukan pada index #${i}`);
+//             break;
+//         } else {
+//             empty = i;
+//         }
+//     console.log(`Index #${empty} data tidak ditemukan`);
+//     }
+// }
+
+// bilangan prima
+function prime(n) {
+    var array = [];
+    var value = 2;
+    // 2 bilangan prima, masukan ke dalam array
+    array.push(value);
+
+    while (array.length < n) {
+        value++;
+        var primeNum = true;
+        for (var i = 0; i < array.length; i++) {
+            if (value % array[i] == 0) {
+                primeNum = false;
+                break;
+            }
+            
         }
-    console.log(`Index #${empty} data tidak ditemukan`);
+        if (primeNum) {
+            array.push(value);
+        }
     }
+    return array;
 }
