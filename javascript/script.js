@@ -39,7 +39,7 @@
 //   return "unknown value";
 // }
 
-//hoisting, scope, execution phase
+// // hoisting, scope, execution phase
 
 // function introduceYourSelf() {
 //   return `Hi, my name is ${name}, a regular ${age} years old ${gender}. I am a proud ${religion}.`;
@@ -51,7 +51,7 @@
 // console.log(introduceYourSelf());
 // var nama = "Fahrizal";
 // function satu() {
-//   // var nama = "Fahrizal";
+//   var nama = "Fahrizal";
 //   console.log(nama);
 // }
 
@@ -102,7 +102,7 @@
 //   } else {
 //     console.log(i);
 //   }
-// // }
+// }
 
 // let beads = [1, 2, 3, 4, 5, 6, 7];
 
@@ -119,7 +119,7 @@
 
 // // SORTING ASCENDING BUBBLE METHOD
 // var arr = [21, 11, 30, 3, 4, 56, 23, 12, 45];
-// // console.log(`Initial array = ${arr.join(" - ")}`);
+// console.log(`Initial array = ${arr.join(" - ")}`);
 
 // var sortingAscending = function() {
 //     // looping index
@@ -140,35 +140,34 @@
 //     }
 // }
 
+// var array = [1, 2, 3, 4, 5, 6, 7, 8];
 
-// // var array = [1, 2, 3, 4, 5, 6, 7, 8];
-
-// // console.log(array.length);
-// // console.log(array[7]);
+// console.log(array.length);
+// console.log(array[7]);
 
 // // SORTING DESCENDING BUBBLE METHOD
-// // var arr = [3, 2, 35, 11, 22, 31, 16, 12, 9];
+// var arr = [3, 2, 35, 11, 22, 31, 16, 12, 9];
 // console.log(`Initial array = ${arr.join(" - ")}`);
 // console.log(arr.length);
 
-// // var sortingDescending = function() {
-// //     // looping index
-// //     for (var i = 0; i < arr.length -1; i++) {
-// //         // looping data
-// //         for (var j = 0; j < arr.length - 1; j++) {
-// //             // bs method
-// //             if (arr[j] < arr[j + 1]) {
-// //                 // lower element swap to temporary container
-// //                 temp = arr[j];
-// //                 // fill in the gap of previous array index
-// //                 arr[j] = arr[j + 1];
-// //                 // swap back lower element from temp to empty index in array
-// //                 arr[j + 1] = temp;
-// //             }
-// //         }
-// //     console.log(`Sorting #${i + 1} = ${arr.join(" - ")}`)
-// //     }
-// // }
+// var sortingDescending = function() {
+//     // looping index
+//     for (var i = 0; i < arr.length -1; i++) {
+//         // looping data
+//         for (var j = 0; j < arr.length - 1; j++) {
+//             // bs method
+//             if (arr[j] < arr[j + 1]) {
+//                 // lower element swap to temporary container
+//                 temp = arr[j];
+//                 // fill in the gap of previous array index
+//                 arr[j] = arr[j + 1];
+//                 // swap back lower element from temp to empty index in array
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     console.log(`Sorting #${i + 1} = ${arr.join(" - ")}`)
+//     }
+// }
 
 // var sortingDescending = function() {
 //     // looping index
@@ -189,20 +188,19 @@
 //     }
 // }
 
-
 // // foo bar baz
 // var input = prompt();
-// // for ( var i = 1; i <= 100; i++) {
-// //     if (i % 21 === 0) {
-// //         console.log(`FooBar`);
-// //     } else if (i % 3 === 0) {
-// //         console.log("kelipatan 3");
-// //     } else if (i % 7 === 0) {
-// //         console.log("kelipatan 7");
-// //     } else {
-// //         console.log(i);
-// //     }
-// // }
+// for ( var i = 1; i <= 100; i++) {
+//     if (i % 21 === 0) {
+//         console.log(`FooBar`);
+//     } else if (i % 3 === 0) {
+//         console.log("kelipatan 3");
+//     } else if (i % 7 === 0) {
+//         console.log("kelipatan 7");
+//     } else {
+//         console.log(i);
+//     }
+// }
 
 // for (var i = 1; i <= input; i++) {
 //     // i kelipatan 3 dan 5
